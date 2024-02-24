@@ -36,7 +36,7 @@ public class RendimientoAcademico {
         Scanner in = new Scanner(System.in);
         String tecnologia = "tecnologia";
         String profesional = "profesional";
-        float promedio;
+        
 
         //Código:
         System.out.println("Cual es tu tipo de alumno? (usa minusculas)");
@@ -47,8 +47,9 @@ public class RendimientoAcademico {
         //Valor de precio de la tecnología 18.000 por cada 5 créditos 
         if (tipoAlumno.equals(tecnologia)) {
             System.out.println("Es tecnologo");
-            System.out.println("Escribe el promedio del alumno: ");
-            promedio = in.nextFloat();
+            System.out.println("Escribe el promedio del alumno: usa la coma como separador decimal: ejemplo 3,3");
+            double promedio = in.nextDouble();
+            
             if (promedio >= 9.5){
                 System.out.println("Tiene un buen promedio, puede cursar hasta 55 creditos con un descuento del 50%");
                 System.out.println("Escribe los números de créditos que desea cursar: ");
