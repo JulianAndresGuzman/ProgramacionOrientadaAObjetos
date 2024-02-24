@@ -36,32 +36,57 @@ public class RendimientoAcademico {
         Scanner in = new Scanner(System.in);
         String tecnologia = "tecnologia";
         String profesional = "profesional";
-        
 
         //Código:
         System.out.println("Cual es tu tipo de alumno? (usa minusculas)");
         System.out.println("*tecnologia   *profesional");
         String tipoAlumno = in.nextLine();
-        
 
         //Valor de precio de la tecnología 18.000 por cada 5 créditos 
         if (tipoAlumno.equals(tecnologia)) {
             System.out.println("Es tecnologo");
             System.out.println("Escribe el promedio del alumno: usa la coma como separador decimal: ejemplo 3,3");
             double promedio = in.nextDouble();
-            
-            if (promedio >= 9.5){
-                System.out.println("Tiene un buen promedio, puede cursar hasta 55 creditos con un descuento del 50%");
+
+            if (promedio >= 9.5) {
+                System.out.println("Tiene un buen promedio, puede cursar hasta 55 creditos con un descuento del 25%");
                 System.out.println("Escribe los números de créditos que desea cursar: ");
                 int creditos = in.nextInt();
-                System.out.println("El valor total de la matricula es: " + (((18000 * (creditos/5))) - (18000 * (creditos/5)) * 0.5));
-            }
-            
-        } else if (tipoAlumno.equals(profesional)){
-        System.out.println("Eres profesional");
-        System.out.println("Escribe el promedio del alumno: ");
-        } else {
-        System.out.println("Asegurate de haber elegido una de las opciones, asegurate de respetar minusculas y mayusculas");}
+                if (creditos <= 55) {
+                    System.out.println("El valor total de la matricula es: " + (((18000 * (creditos / 5))) - (18000 * (creditos / 5)) * 0.25));
+                } else {
+                    System.out.println("No puedes registar más creditos de lo estimado");
+                }
 
+            } else if (promedio >= 9 && promedio < 9.5) {
+                System.out.println("Tiene un buen promedio, puede cursar hasta 50 creditos con un descuento del 10%");
+                System.out.println("Escribe los números de créditos que desea cursar: ");
+                int creditos = in.nextInt();
+                if (creditos <= 50) {
+
+                    System.out.println("El valor total de la matricula es: " + (((18000 * (creditos / 5))) - (18000 * (creditos / 5)) * 0.1));
+                } else {
+                    System.out.println("No puedes registar más creditos de lo estimado");
+                }
+
+            } else if (promedio >= 7 && promedio < 9) {
+                System.out.println("puede cursar hasta 50 creditos");
+                System.out.println("Escribe los números de créditos que desea cursar: ");
+                int creditos = in.nextInt();
+                if (creditos <= 50) {
+
+                    System.out.println("El valor total de la matricula es: " + (((18000 * (creditos / 5)))));
+                } else {
+                    System.out.println("No puedes registar más creditos de lo estimado");
+                }
+
+            } else if (tipoAlumno.equals(profesional)) {
+                System.out.println("Eres profesional");
+                System.out.println("Escribe el promedio del alumno: ");
+            } else {
+                System.out.println("Asegurate de haber elegido una de las opciones, asegurate de respetar minusculas y mayusculas");
+            }
+
+        }
     }
 }
