@@ -20,7 +20,6 @@ Obtener el total que tendrá que pagar un alumno si el valor de la matrícula pa
 profesional es de $30.000 por cada cinco créditos y para alumnos de tecnología es de $18.000
 por cada cinco créditos.
  */
-
 package condicionalesejerciciostaller;
 
 /**
@@ -32,13 +31,24 @@ import java.util.Scanner;
 public class RendimientoAcademico {
 
     public static void main(String args[]) {
-        
+
         //variables:
         Scanner in = new Scanner(System.in);
-        int[] notas = new int[5]; //creamos un arreglo para guardar las notas almacenadas, en este caso puse 5
-        
+        String tecnologia = "tecnologia";
+        String Prefesional = "profesional";
+        float promedio;
+
         //Código:
-        System.out.println("");
+        System.out.println("Cual es tu tipo de alumno? (usa minusculas)");
+        System.out.println("*tecnologia   *profesional)");
+
+        String tipoAlumno = in.nextLine();
+
+        System.out.println("Escribe el promedio del alumno: ");
+
+        if (tipoAlumno.equals(tecnologia)) {
+
+        }
 
     }
 }
