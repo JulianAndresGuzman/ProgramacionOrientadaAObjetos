@@ -80,11 +80,36 @@ public class RendimientoAcademico {
                     System.out.println("No puedes registar más creditos de lo estimado");
                 }
 
-            } else if (tipoAlumno.equals(profesional)) {
+            } else if (promedio < 7 && promedio < 9) {
+                System.out.println("Cuantas materias perdió?");
+                int materiasPerdidas = in.nextInt();
+                if (materiasPerdidas <= 3) {
+                    System.out.println("puede cursar hasta 45 creditos");
+                    System.out.println("Escribe los números de créditos que desea cursar: ");
+                    int creditos = in.nextInt();
+                    if (creditos <= 45) {
+                        System.out.println("El valor total de la matricula es: " + (((18000 * (creditos / 5)))));
+                    } else {
+                        System.out.println("No puedes registar más creditos de lo estimado");
+
+                    }
+                } else {
+                    System.out.println("puede cursar hasta 40 creditos");
+                    System.out.println("Escribe los números de créditos que desea cursar: ");
+                    int creditos = in.nextInt();
+                    if (creditos <= 40) {
+                        System.out.println("El valor total de la matricula es: " + (((18000 * (creditos / 5)))));
+                    } else {
+                        System.out.println("No puedes registar más creditos de lo estimado");
+                    }
+                    /*else if (tipoAlumno.equals(profesional)) {
                 System.out.println("Eres profesional");
                 System.out.println("Escribe el promedio del alumno: ");
             } else {
                 System.out.println("Asegurate de haber elegido una de las opciones, asegurate de respetar minusculas y mayusculas");
+                     */
+                }
+
             }
 
         }
