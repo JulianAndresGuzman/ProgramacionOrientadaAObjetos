@@ -22,12 +22,12 @@ Obtener el total que tendrá que pagar un alumno si el valor de la matrícula pa
 profesional es de $30.000 por cada cinco créditos y para alumnos de tecnología es de $18.000
 por cada cinco créditos.
  */
-package condicionalesejerciciostaller;
 
 /**
  *
  * @author JulianAndresGuzman
  */
+package condicionalesejerciciostaller;
 import java.util.Scanner;
 
 public class RendimientoAcademico {
