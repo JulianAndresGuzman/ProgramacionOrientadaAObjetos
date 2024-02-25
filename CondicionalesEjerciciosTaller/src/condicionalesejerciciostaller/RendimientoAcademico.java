@@ -102,16 +102,16 @@ public class RendimientoAcademico {
                     } else {
                         System.out.println("No puedes registar más creditos de lo estimado");
                     }
-                    /*else if (tipoAlumno.equals(profesional)) {
-                System.out.println("Eres profesional");
-                System.out.println("Escribe el promedio del alumno: ");
-            } else {
-                System.out.println("Asegurate de haber elegido una de las opciones, asegurate de respetar minusculas y mayusculas");
-                     */
+                    
                 }
 
             }
 
+        } else if (tipoAlumno.equals(profesional)) {
+                System.out.println("Eres profesional");
+                System.out.println("Escribe el promedio del alumno: ");
+            } else {
+                System.out.println("Asegurate de haber elegido una de las opciones, asegurate de respetar minusculas y mayusculas");
         }
     }
 }
