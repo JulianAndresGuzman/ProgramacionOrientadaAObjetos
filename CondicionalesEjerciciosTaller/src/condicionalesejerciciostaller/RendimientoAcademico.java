@@ -117,9 +117,7 @@ public class RendimientoAcademico {
                     } else {
                         System.out.println("No puedes registar más creditos de lo estimado");
                     }
-
                 }
-
             }
 
             //SI EL ALUMNO ES PROFESIONAL
@@ -152,8 +150,8 @@ public class RendimientoAcademico {
                 } else {
                     System.out.println("No puedes registar más creditos de lo estimado");
                 }
-
             }
+            
             //En caso de escribir mal a los usuarios
         } else {
             System.out.println("Asegurate de haber elegido una de las opciones, asegurate de respetar minusculas y mayusculas");
