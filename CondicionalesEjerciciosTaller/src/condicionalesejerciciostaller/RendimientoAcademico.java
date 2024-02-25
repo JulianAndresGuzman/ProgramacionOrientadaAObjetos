@@ -75,20 +75,20 @@ public class RendimientoAcademico {
                 } else {
                     System.out.println("No puedes registar más creditos de lo estimado");
                 }
-                
+
                 //Si el promedio es mayor que 7 pero menor que 9
-            }   else if (promedio >= 7 && promedio < 9) {
+            } else if (promedio >= 7 && promedio < 9) {
                 System.out.println("puede cursar hasta 50 creditos");
                 System.out.println("Escribe los números de créditos que desea cursar: ");
                 int creditos = in.nextInt();
-                
+
                 //calcular el valor total con descuento
                 if (creditos <= 50) {
                     System.out.println("El valor total de la matricula es: " + (((18000 * (creditos / 5)))));
                 } else {
                     System.out.println("No puedes registar más creditos de lo estimado");
                 }
-                
+
                 //Si el promedio es menor que 7
             } else if (promedio < 7) {
                 System.out.println("Cuantas materias perdió?");
@@ -97,7 +97,7 @@ public class RendimientoAcademico {
                     System.out.println("puede cursar hasta 45 creditos");
                     System.out.println("Escribe los números de créditos que desea cursar: ");
                     int creditos = in.nextInt();
-                    
+
                     //Calcular el valor total de la matricula sin promoción
                     if (creditos <= 45) {
                         System.out.println("El valor total de la matricula es: " + (((18000 * (creditos / 5)))));
@@ -106,11 +106,11 @@ public class RendimientoAcademico {
 
                     }
                     //Si perdió más de 3 materias
-                } else if (materiasPerdidas > 3){
+                } else if (materiasPerdidas > 3) {
                     System.out.println("puede cursar hasta 40 creditos");
                     System.out.println("Escribe los números de créditos que desea cursar: ");
                     int creditos = in.nextInt();
-                    
+
                     //Valor total del costo de matricula si perdió más de 3 materias
                     if (creditos <= 40) {
                         System.out.println("El valor total de la matricula es: " + (((18000 * (creditos / 5)))));
@@ -123,16 +123,16 @@ public class RendimientoAcademico {
             }
 
             //SI EL ALUMNO ES PROFESIONAL
-        } else if (tipoAlumno.equals(profesional)) { 
+        } else if (tipoAlumno.equals(profesional)) {
             System.out.println("Eres profesional");
             System.out.println("Escribe el promedio del alumno: usa la coma como separador decimal: ejemplo 3,3)");
             double promedio = in.nextDouble();
-            
+
             //Si el promedio es 9.5 o más
             if (promedio >= 9.5) {
                 System.out.println("Tiene un buen promedio, puede cursar hasta 55 creditos con un descuento del 20%");
                 System.out.println("Escribe los números de créditos que desea cursar: ");
-                
+
                 //Calculando el valor total de la matricula con promoción
                 int creditos = in.nextInt();
                 if (creditos <= 55) {
@@ -140,7 +140,7 @@ public class RendimientoAcademico {
                 } else {
                     System.out.println("No puedes registar más creditos de lo estimado");
                 }
-                
+
                 //Calculando el valor total de la matricula sin promoción
             } else if (promedio < 9.5) {
                 System.out.println("Tiene un buen promedio, puede cursar hasta 50 creditos");
