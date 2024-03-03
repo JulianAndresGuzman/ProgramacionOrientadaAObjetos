@@ -18,7 +18,7 @@ public class BuclesRepetitivos {
     public static void main(String[] args) {
 
         //añadimos las variables, arreglos
-        String Paletas[] = {"(1)Paleta Limón", "(2)Paleta Nuez", "(3)Paleta Lulo", "(4)Paleta Fresa", "(5)Paleta Crema"};
+        String Paletas[] = {"(1)Paleta Limon", "(2)Paleta Nuez", "(3)Paleta Lulo", "(4)Paleta Fresa", "(5)Paleta Crema"};
         int precios[] = {2500, 2800, 2600, 2000, 3000};
         int ventas[] = new int[precios.length];
         Scanner in = new Scanner(System.in);
@@ -35,10 +35,10 @@ public class BuclesRepetitivos {
 
         int totalVentas = 0;
         for (int i = 0; i < precios.length; i++) {
-            System.out.println("paletas de " + Paletas[i] + "vendidas: " + ventas[i]);
             int subtotal = ventas[i] * precios[i];
-            System.out.println("Subtotal de las paletas de " + Paletas[i] + " = " + subtotal);
             totalVentas += subtotal;
+            System.out.println(Paletas[i] + " vendidos: " + ventas[i] + " = " + subtotal);
         }
+        System.out.println("precio total vendidas: " + totalVentas + "$");
     }
 }
