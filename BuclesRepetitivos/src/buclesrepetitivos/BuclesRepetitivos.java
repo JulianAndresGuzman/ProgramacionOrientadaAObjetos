@@ -38,6 +38,7 @@ public class BuclesRepetitivos {
             System.out.println("paletas de " + Paletas[i] + "vendidas: " + ventas[i]);
             int subtotal = ventas[i] * precios[i];
             System.out.println("Subtotal de las paletas de " + Paletas[i] + " = " + subtotal);
+            totalVentas += subtotal;
         }
     }
 }
