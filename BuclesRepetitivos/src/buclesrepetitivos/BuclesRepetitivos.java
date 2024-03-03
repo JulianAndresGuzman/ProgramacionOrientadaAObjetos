@@ -1,5 +1,5 @@
 package buclesrepetitivos;
-import java.util.Scanner; 
+import java.util.Scanner;
 
 /**
  *
@@ -12,17 +12,32 @@ las paletas vendidas. Los sabores y los precios son: limón ($2500), nuez ($2800
 fresa ($2000) y crema ($3000). El sistema debe imprimir la cantidad de paletas vendidas de cada
 sabor, el valor vendido y la venta total. Considere que una factura puede tener varias paletas de
 diferentes sabores. */
-
 public class BuclesRepetitivos {
 
     public static void main(String[] args) {
-        
-        //añadimos algunos arreglos
-        String[] sabores = {"limón", "nuez", "lulo", "fresa", "crema"};
-        int [] precios = {2500, 2800, 2600, 2000, 3000};
-        int [] ventas = new int [sabores.length]; //La variable lenght indica el tamaño de arreglo que queremos poner dependiendo del tamaño de otra
-        
 
+        //añadimos las variables, arreglos
+        String Paletas[] = {"(1)Paleta Limón", "(2)Paleta Nuez", "(3)Paleta Lulo", "(4)Paleta Fresa", "(5)Paleta Crema"};
+        int precios[] = {2500, 2800, 2600, 2000, 3000};
+        int ventas[] = new int[precios.length];
+        Scanner in = new Scanner(System.in);
+
+        //Codigo
+        System.out.println("las compras en el siguiente metodo (paleta) (compras)");
+        String entrada = in.nextLine();
+        
+        
+        for(int i = 0; i < Paletas.length; i++){
+            System.out.println("Cuantas paletas de " + Paletas [i] + " Comparaste?");
+            int ventas2 = in.nextInt();
+            ventas[i] = ventas2;
+        }
+            
+        int totalVentas = 0;
+        for (int i = 0; i < precios.length; i++){
+            
+        }
+        }
     }
-    
-}
+
+

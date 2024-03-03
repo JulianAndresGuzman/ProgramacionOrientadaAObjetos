@@ -6,7 +6,7 @@ aumento del 20% por cada hora extra.
  */
 /**
  *
- * @author JulianAndres
+ * @author JulianAndresGuzman
  */
 package condicionalesejerciciostaller;
 
