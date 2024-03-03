@@ -1,4 +1,5 @@
 package buclesrepetitivos;
+
 import java.util.Scanner;
 
 /**
@@ -25,19 +26,18 @@ public class BuclesRepetitivos {
         //Codigo
         System.out.println("las compras en el siguiente metodo (paleta) (compras)");
         String entrada = in.nextLine();
-        
-        
-        for(int i = 0; i < Paletas.length; i++){
-            System.out.println("Cuantas paletas de " + Paletas [i] + " Comparaste?");
+
+        for (int i = 0; i < Paletas.length; i++) {
+            System.out.println("Cuantas paletas de " + Paletas[i] + " Comparaste?");
             int ventas2 = in.nextInt();
             ventas[i] = ventas2;
         }
-            
+
         int totalVentas = 0;
-        for (int i = 0; i < precios.length; i++){
-            
-        }
+        for (int i = 0; i < precios.length; i++) {
+            System.out.println("paletas de " + Paletas[i] + "vendidas: " + ventas[i]);
+            int subtotal = ventas[i] * precios[i];
+            System.out.println("Subtotal de las paletas de " + Paletas[i] + " = " + subtotal);
         }
     }
-
-
+}
