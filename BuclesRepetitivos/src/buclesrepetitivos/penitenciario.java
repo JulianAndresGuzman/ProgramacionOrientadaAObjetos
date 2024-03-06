@@ -7,27 +7,32 @@ la cantidad de internos que cumplen con dicha condición.
  *
  * @author JulianAndresGuzman
  */
-
 package buclesrepetitivos;
+
 import java.util.Scanner;
+
 public class penitenciario {
+
     public static void main(String args[]) {
-        
-        String nombres[] = new String[10];
-        int condena [] = new int[nombres.length];
+
         Scanner in = new Scanner(System.in);
+
+        System.out.println("Ingrese el numero de los prisioneros");
+        int numeroPrisioneros = in.nextInt();
         
-        for (int n = 0; n < nombres.length; n++){
+        String nombres[] = new String[numeroPrisioneros];
+        int condena[] = new int[nombres.length];
+
+        for (int n = 0; n < nombres.length; n++) {
             System.out.println("Ingrese nombre del prisionero");
             nombres[n] = in.nextLine();
-        }
-        for (int n = 0; n < nombres.length; n++){
             System.out.println("ingrese condena del prisionero en meses: " + nombres[n]);
             condena[n] = in.nextInt();
+        }
+
+        for (int n = 0; n < nombres.length; n++) {
+            System.out.println("la condena de " + nombres[n] + " Es de: " + condena[n] + " meses");
+
+        }
     }
-         for (int n = 0; n < nombres.length; n++){
-            System.out.println("la condena de " + nombres[n] + "Es de: " + condena[n]);
-            
-}
-}
 }
