@@ -28,7 +28,7 @@ public class BuclesRepetitivos {
         String entrada = in.nextLine();
 
         for (int i = 0; i < Paletas.length; i++) {
-            System.out.println("Cuantas paletas de " + Paletas[i] + " Comparaste?");
+            System.out.println("Cuantas paletas de " + Paletas[i] + " vendiste?");
             int ventas2 = in.nextInt();
             ventas[i] = ventas2;
         }
