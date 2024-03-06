@@ -1,7 +1,3 @@
-package buclesrepetitivos;
-
-import java.util.Scanner;
-
 /**
  *
  * @author JulianAndresGuzman
@@ -12,7 +8,13 @@ sistema todas las facturas de ventas realizadas. Cada factura contiene la cantid
 las paletas vendidas. Los sabores y los precios son: limón ($2500), nuez ($2800), lulo ($2600),
 fresa ($2000) y crema ($3000). El sistema debe imprimir la cantidad de paletas vendidas de cada
 sabor, el valor vendido y la venta total. Considere que una factura puede tener varias paletas de
-diferentes sabores. */
+diferentes sabores.
+
+*/
+
+package buclesrepetitivos;
+import java.util.Scanner;
+
 public class BuclesRepetitivos {
 
     public static void main(String[] args) {
