@@ -27,18 +27,16 @@ public class BuclesRepetitivos {
 
         //Codigo
         System.out.println("las compras en el siguiente metodo (paleta) (compras)");
-        String entrada = in.nextLine();
-
-        for (int i = 0; i < Paletas.length; i++) {
+        for (int i = 0; i < Paletas.length; i++) { //Mientras i sea menor que la cantidad de paletas que se venden, aumentará 1
             System.out.println("Cuantas paletas de " + Paletas[i] + " vendiste?");
             int ventas2 = in.nextInt();
-            ventas[i] = ventas2;
+            ventas[i] = ventas2; //se guardan los datos en el conjunto de ventas
         }
 
         int totalVentas = 0;
-        for (int i = 0; i < precios.length; i++) {
-            int subtotal = ventas[i] * precios[i];
-            totalVentas += subtotal;
+        for (int i = 0; i < Paletas.length; i++) {
+            int subtotal = ventas[i] * precios[i]; // se haya el subtotal multiplicando el arreglo del conjunto de ventas con el de precios
+            totalVentas += subtotal; // se haya el total sumando todos los subtotales
             System.out.println(Paletas[i] + " " + precios[i] + "$" + " vendidos: " + ventas[i] + " = " + subtotal+ "$");
         }
         System.out.println("precio total vendidas: " + totalVentas + "$");
