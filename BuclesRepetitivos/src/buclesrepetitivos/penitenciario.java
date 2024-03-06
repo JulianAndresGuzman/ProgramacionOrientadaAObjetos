@@ -23,14 +23,16 @@ public class penitenciario {
         String nombres[] = new String[numeroPrisioneros];
         int condena[] = new int[nombres.length];
 
-        for (int n = 0; n < nombres.length; n++) {
+        for (int n = 0; n < numeroPrisioneros; n++) {
+            
             System.out.println("Ingrese nombre del prisionero");
             nombres[n] = in.nextLine();
+            
             System.out.println("ingrese condena del prisionero en meses: " + nombres[n]);
             condena[n] = in.nextInt();
         }
 
-        for (int n = 0; n < nombres.length; n++) {
+        for (int n = 0; n < numeroPrisioneros; n++) {
             System.out.println("la condena de " + nombres[n] + " Es de: " + condena[n] + " meses");
 
         }
